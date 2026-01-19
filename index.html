@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don't Go to Sleep - Recycling Electrical Waste</title>
+    <meta name="description"
+        content="A circular economy project recycling electrical wire waste into 3D printing filament and copper.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="theme-dark">
+    <!-- Custom Cursor -->
+    <div id="cursor-spark" class="cursor-spark"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-panel">
+        <div class="logo">
+            <span class="neon-text">DON'T GO TO SLEEP</span>
+        </div>
+        <div class="nav-links">
+            <a href="#hero" data-i18n="nav.home">Home</a>
+            <a href="process.html" data-i18n="nav.process">The Process</a>
+            <a href="#team" data-i18n="nav.team">The Innovators</a>
+            <a href="benchmarks.html" data-i18n="nav.inspiration">Benchmarking</a>
+            <button id="lang-toggle" class="btn-cyber">
+                <span id="current-lang">EN</span> / <span id="next-lang">FR</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="flicker-title" data-i18n="hero.title">DON'T GO TO SLEEP</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Reviving Waste. Empowering Future.</p>
+            <div class="wire-animation-container">
+                <!-- SVG/3D Representation will go here -->
+                <div class="wire-strand plastic"></div>
+                <div class="wire-strand copper"></div>
+                <div class="wire-core"></div>
+            </div>
+            <a href="#mission" class="btn-primary glow-effect" data-i18n="hero.cta">Explore The Cycle</a>
+        </div>
+    </section>
+
+    <!-- Mission / Process -->
+    <section id="mission" class="mission-section scroll-reveal">
+        <h2 class="section-title" data-i18n="mission.title">The Process</h2>
+        <div class="process-timeline">
+            <div class="timeline-step">
+                <div class="step-icon">🔌</div>
+                <h3 data-i18n="mission.step1">Collection</h3>
+                <p data-i18n="mission.desc1">Gathering electrical wire waste.</p>
+            </div>
+            <div class="timeline-step">
+                <div class="step-icon">✂️</div>
+                <h3 data-i18n="mission.step2">Stripping</h3>
+                <p data-i18n="mission.desc2">Removing the outer layer.</p>
+            </div>
+            <div class="timeline-step">
+                <div class="step-icon">🔄</div>
+                <h3 data-i18n="mission.step3">Separation</h3>
+                <p data-i18n="mission.desc3">Isolating Plastic and Copper.</p>
+            </div>
+            <div class="timeline-step">
+                <div class="step-icon">🧵</div>
+                <h3 data-i18n="mission.step4">Transformation</h3>
+                <p data-i18n="mission.desc4">Creating Filament & Pure Ingot.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Team -->
+    <section id="team" class="team-section scroll-reveal">
+        <h2 class="section-title" data-i18n="team.title">The Innovators</h2>
+        <div class="team-grid">
+            <!-- Team members will be injected or hardcoded -->
+            <div class="team-card glass-card">
+                <div class="card-glow"></div>
+                <h3>Abdessamad Boulbo</h3>
+                <p data-i18n="team.role">Electrical Engineering Trainee</p>
+            </div>
+            <div class="team-card glass-card">
+                <div class="card-glow"></div>
+                <h3>Anas</h3>
+                <p data-i18n="team.role">Electrical Engineering Trainee</p>
+            </div>
+            <div class="team-card glass-card">
+                <div class="card-glow"></div>
+                <h3>Othmane Boukachmir</h3>
+                <p data-i18n="team.role">Electrical Engineering Trainee</p>
+            </div>
+            <div class="team-card glass-card">
+                <div class="card-glow"></div>
+                <h3>Rasse Omar</h3>
+                <p data-i18n="team.role">Electrical Engineering Trainee</p>
+            </div>
+            <div class="team-card glass-card">
+                <div class="card-glow"></div>
+                <h3>Youssef Laaribi</h3>
+                <p data-i18n="team.role">Electrical Engineering Trainee</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inspiration -->
+    <section id="inspiration" class="inspiration-section scroll-reveal">
+        <h2 class="section-title" data-i18n="inspiration.title">Global Benchmarking</h2>
+        <div class="bench-grid">
+            <a href="https://reflowfilament.com" target="_blank" class="bench-item">
+                <h3>Reflow</h3>
+                <p data-i18n="bench.reflow">Sustainable 3D Filament</p>
+            </a>
+            <a href="https://preciousplastic.com" target="_blank" class="bench-item">
+                <h3>Precious Plastic</h3>
+                <p data-i18n="bench.precious">Open Source Recycling</p>
+            </a>
+            <a href="https://www.filamentive.com" target="_blank" class="bench-item">
+                <h3>Filamentive</h3>
+                <p data-i18n="bench.filamentive">Recycled Material Expert</p>
+            </a>
+            <a href="https://www.umicore.com" target="_blank" class="bench-item">
+                <h3>Umicore</h3>
+                <p data-i18n="bench.umicore">Metal Recycling & Tech</p>
+            </a>
+            <a href="https://www.closetheloop.com.au" target="_blank" class="bench-item">
+                <h3>Closing the Loop</h3>
+                <p data-i18n="bench.closeloop">Circular Economy Solutions</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="footer scroll-reveal">
+        <div class="footer-content">
+            <div class="footer-logo-container">
+                <img src="logo.png" alt="CMC Logo" class="footer-logo">
+            </div>
+            <h2 data-i18n="contact.title">Contact Us</h2>
+            <p>CMC (Cité des Métiers et des Compétences)</p>
+            <p class="copyright">© 2024 Don't Go to Sleep. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="locales.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

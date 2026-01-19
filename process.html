@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Process - Don't Go to Sleep</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific styles for process page details */
+        .process-detail-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .detail-step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 6rem;
+            gap: 4rem;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .detail-step.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .detail-step:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .step-visual {
+            flex: 1;
+            height: 300px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .step-visual::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, rgba(0, 229, 255, 0.1), transparent 70%);
+        }
+
+        .step-info {
+            flex: 1;
+        }
+
+        .step-number {
+            font-family: var(--font-head);
+            font-size: 1.5rem;
+            color: var(--color-copper);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .step-info h2 {
+            font-family: var(--font-head);
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+
+        .step-info p {
+            line-height: 1.8;
+            color: #ccc;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+
+            .detail-step,
+            .detail-step:nth-child(even) {
+                flex-direction: column;
+                gap: 2rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body class="theme-dark">
+    <!-- Custom Cursor -->
+    <div id="cursor-spark" class="cursor-spark"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-panel">
+        <div class="logo">
+            <a href="index.html"><span class="neon-text">DON'T GO TO SLEEP</span></a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" data-i18n="nav.home">Home</a>
+            <a href="process.html" class="active" data-i18n="nav.process">The Process</a>
+            <!-- Keep these pointing to main page anchors or assume user wants full navigation? 
+                 Usually easier to link back to index anchors -->
+            <a href="index.html#team" data-i18n="nav.team">The Innovators</a>
+            <a href="index.html#inspiration" data-i18n="nav.inspiration">Benchmarking</a>
+            <button id="lang-toggle" class="btn-cyber">
+                <span id="current-lang">EN</span> / <span id="next-lang">FR</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="hero-section" style="height: 50vh; min-height: 400px;">
+        <div class="hero-content">
+            <h1 class="flicker-title" data-i18n="mission.pageTitle">THE LIFECYCLE</h1>
+            <p class="hero-subtitle" data-i18n="mission.pageSubtitle">From Waste to Raw Material</p>
+        </div>
+        <div class="wire-animation-container"></div>
+    </header>
+
+    <!-- Detailed Process Content -->
+    <main class="process-detail-section">
+
+        <!-- Step 1 -->
+        <div class="detail-step scroll-reveal">
+            <div class="step-visual">
+                🔌
+            </div>
+            <div class="step-info">
+                <span class="step-number">01</span>
+                <h2 data-i18n="mission.step1">Collection</h2>
+                <p data-i18n="mission.detail1">We collaborate with industrial sectors and local communities to gather
+                    electrical wire waste that would otherwise end up in landfills. This critical first step ensures a
+                    steady supply of raw materials while cleaning up the environment.</p>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="detail-step scroll-reveal">
+            <div class="step-visual">
+                ✂️
+            </div>
+            <div class="step-info">
+                <span class="step-number">02</span>
+                <h2 data-i18n="mission.step2">Stripping</h2>
+                <p data-i18n="mission.detail2">Using advanced stripping machines, we carefully remove the protective
+                    outer sheathing from the wires. This process is optimized to handle various wire gauges without
+                    damaging the valuable copper core inside.</p>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="detail-step scroll-reveal">
+            <div class="step-visual">
+                🔄
+            </div>
+            <div class="step-info">
+                <span class="step-number">03</span>
+                <h2 data-i18n="mission.step3">Separation</h2>
+                <p data-i18n="mission.detail3">The stripped materials are sorted into two distinct streams: high-purity
+                    copper and PVC/PE plastics. Our separation technology ensures minimal contamination, which is
+                    crucial for the quality of the final products.</p>
+            </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="detail-step scroll-reveal">
+            <div class="step-visual">
+                🧵
+            </div>
+            <div class="step-info">
+                <span class="step-number">04</span>
+                <h2 data-i18n="mission.step4">Transformation</h2>
+                <p data-i18n="mission.detail4">The copper is melted and cast into pure ingots for industrial use.
+                    Meanwhile, the plastic waste is shredded, extruded, and spooled into high-quality filament for 3D
+                    printing, completing the circular economy loop.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <div class="footer-logo-container">
+                <img src="logo.png" alt="CMC Logo" class="footer-logo">
+            </div>
+            <h2 data-i18n="contact.title">Contact Us</h2>
+            <p>CMC (Cité des Métiers et des Compétences)</p>
+            <p class="copyright">© 2024 Don't Go to Sleep. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="locales.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

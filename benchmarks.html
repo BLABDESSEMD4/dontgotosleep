@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Benchmarks - Don't Go to Sleep</title>
+    <meta name="description" content="Inspirational stories from global leaders in circular economy and recycling.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="theme-dark">
+    <!-- Custom Cursor -->
+    <div id="cursor-spark" class="cursor-spark"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-panel">
+        <div class="logo">
+            <a href="index.html" class="neon-text">DON'T GO TO SLEEP</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" data-i18n="nav.home">Home</a>
+            <a href="index.html#process" data-i18n="nav.process">The Process</a> <!-- Updated link -->
+            <a href="index.html#team" data-i18n="nav.team">The Innovators</a>
+            <a href="benchmarks.html" class="active" data-i18n="nav.inspiration">Benchmarking</a>
+            <button id="lang-toggle" class="btn-cyber">
+                <span id="current-lang">EN</span> / <span id="next-lang">FR</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <h1 class="flicker-title" data-i18n="bench.pageTitle">GLOBAL BENCHMARKS</h1>
+        <p class="subtitle" data-i18n="bench.pageSubtitle">Giants who paved the way for a circular future.</p>
+    </header>
+
+    <!-- Benchmarks Timeline -->
+    <main class="benchmarks-container">
+
+        <!-- Reflow -->
+        <section class="bench-section" id="reflow">
+            <div class="bench-bg" style="background-image: url('assets/bg-reflow.png');"></div>
+            <div class="bench-overlay"></div>
+            <div class="bench-content scroll-reveal">
+                <div class="logo-container">
+                    <img src="assets/logo-reflow.png" alt="Reflow Logo" class="bench-logo">
+                </div>
+                <h2 data-i18n="bench.reflow.name">Reflow</h2>
+                <h3 class="tagline" data-i18n="bench.reflow.tag">The Innovators</h3>
+                <div class="story-box">
+                    <p data-i18n="bench.reflow.story">Started with a mission to turn plastic waste from developing
+                        countries into high-quality 3D filament. They began by working directly with waste collectors in
+                        Nairobi to create a social-impact supply chain.</p>
+                </div>
+                <div class="quote-box">
+                    <span class="quote-icon">❝</span>
+                    <p data-i18n="bench.reflow.inspire">Transforms waste into creative potential, mirroring our filament
+                        production goals.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Precious Plastic -->
+        <section class="bench-section" id="precious">
+            <div class="bench-bg" style="background-image: url('assets/bg-precious.png');"></div>
+            <div class="bench-overlay"></div>
+            <div class="bench-content scroll-reveal">
+                <div class="logo-container">
+                    <img src="assets/logo-precious.png" alt="Precious Plastic Logo" class="bench-logo">
+                </div>
+                <h2 data-i18n="bench.precious.name">Precious Plastic</h2>
+                <h3 class="tagline" data-i18n="bench.precious.tag">The Community</h3>
+                <div class="story-box">
+                    <p data-i18n="bench.precious.story">Started in 2013 as a graduation project by Dave Hakkens. It was
+                        built on the idea of "Open Source" — sharing machine designs for free so anyone, anywhere, can
+                        start their own recycling workshop.</p>
+                </div>
+                <div class="quote-box">
+                    <span class="quote-icon">❝</span>
+                    <p data-i18n="bench.precious.inspire">Democratizes recycling technology, inspiring our
+                        community-driven approach.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filamentive -->
+        <section class="bench-section" id="filamentive">
+            <div class="bench-bg" style="background: linear-gradient(135deg, #eee 0%, #aaa 100%);"></div>
+            <!-- Fallback Style -->
+            <div class="bench-overlay"></div>
+            <div class="bench-content scroll-reveal">
+                <div class="logo-container">
+                    <!-- Text Fallback for Logo -->
+                    <h2 class="text-logo">Filamentive</h2>
+                </div>
+                <h2 data-i18n="bench.filamentive.name">Filamentive</h2>
+                <h3 class="tagline" data-i18n="bench.filamentive.tag">The Quality Standard</h3>
+                <div class="story-box">
+                    <p data-i18n="bench.filamentive.story">Founded to address the massive amount of plastic waste
+                        generated by 3D printing itself. They started by researching how to make recycled filament that
+                        performs exactly like "virgin" plastic.</p>
+                </div>
+                <div class="quote-box">
+                    <span class="quote-icon">❝</span>
+                    <p data-i18n="bench.filamentive.inspire">Proves that recycled materials can meet industrial quality
+                        standards.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Umicore -->
+        <section class="bench-section" id="umicore">
+            <div class="bench-bg" style="background-image: url('assets/bg-umicore.png');"></div>
+            <div class="bench-overlay"></div>
+            <div class="bench-content scroll-reveal">
+                <div class="logo-container">
+                    <h2 class="text-logo" style="font-family: 'Space Grotesk'; text-transform:uppercase;">Umicore</h2>
+                </div>
+                <h2 data-i18n="bench.umicore.name">Umicore</h2>
+                <h3 class="tagline" data-i18n="bench.umicore.tag">The Industrial Giant</h3>
+                <div class="story-box">
+                    <p data-i18n="bench.umicore.story">Originally a mining company with over 100 years of history. They
+                        made a massive strategic pivot to become a world leader in "Urban Mining" — extracting precious
+                        metals (like copper) from old electronics and wires.</p>
+                </div>
+                <div class="quote-box">
+                    <span class="quote-icon">❝</span>
+                    <p data-i18n="bench.umicore.inspire">A model for pivot and scale: from traditional mining to urban
+                        mining.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Closing the Loop -->
+        <section class="bench-section" id="closingloop">
+            <div class="bench-bg" style="background-image: url('assets/bg-closing.png');"></div>
+            <div class="bench-overlay"></div>
+            <div class="bench-content scroll-reveal">
+                <div class="logo-container">
+                    <h2 class="text-logo">Closing the Loop</h2>
+                </div>
+                <h2 data-i18n="bench.closeloop.name">Closing the Loop</h2>
+                <h3 class="tagline" data-i18n="bench.closeloop.tag">The Service Model</h3>
+                <div class="story-box">
+                    <p data-i18n="bench.closeloop.story">Started with a simple "One-for-One" concept. For every new
+                        phone a company buys, Closing the Loop collects and recycles one scrap phone from a country
+                        where waste is a problem, making the industry "waste-neutral."</p>
+                </div>
+                <div class="quote-box">
+                    <span class="quote-icon">❝</span>
+                    <p data-i18n="bench.closeloop.inspire">Innovative business models that fund waste collection in
+                        developing nations.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer scroll-reveal">
+        <div class="footer-content">
+            <div class="footer-logo-container">
+                <!-- Using text as fallback if logo.png missing -->
+                <h3 style="color:white;">CMC</h3>
+            </div>
+            <h2 data-i18n="contact.title">Contact Us</h2>
+            <p>CMC (Cité des Métiers et des Compétences)</p>
+            <p class="copyright">© 2024 Don't Go to Sleep. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="locales.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
